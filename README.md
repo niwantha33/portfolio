@@ -2,9 +2,9 @@
 
 ## Description
 
-What motivated do this project is to demonstrated the projects that I have done during my bootcamp.I will update this project every weekend with new weekend projects.
+What motivated to do this project is to demonstrate the project experience that I gained during my bootcamp. I will update this project every weekend with each weekly new project.
 
-While working in this project, I learnt HTML semantic elements, flex-box, grid and features and SEO. 
+While working on this project, I learned HTML semantic elements, flex-box, grid and features and SEO. 
 
 
 ## Usage
