@@ -1,57 +1,114 @@
-
-.header{
+.header {
     grid-area: header;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: row;
-   
     align-content: flex-end;
+    background-color: rgb(15, 148, 192);
+    color: white;
+    
 }
-.nav-bar{
+.nav-bar {
     grid-area: link;
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    background-color: rgb(15, 148, 192);
+
+
 }
 
 /* subtitle area */
-.subtitle{
-    grid-area: subtile;   
+.subtitle {
+    grid-area: subtile;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+   
+
 }
-.subtitle h2{   
-    margin-left: 10%;   
-    margin-right: 20%;
-    padding: 10px;
-    border: 2px solid brown;
-    align-content: stretch;
+
+.subtitle h2 {
+    margin-left: 10%;
+    margin-right: 50%;
+    padding: 10px;   
+    /* border: 2px solid brown;   */
+    background-color: rgb(15, 148, 192, 12);
+    color: antiquewhite;
 }
+
 /* link area */
-.nav-bar ul{
-    list-style: none;
+.nav-bar ul {
+    list-style: none;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+   
 }
 
-.nav-bar ul li{
-    display: inline-block; 
+.nav-bar ul li {
+    display: inline-block;
     /*margin: 1%; */
-    padding: 2%;  
+    /* justify-content: stretch; */
+    /* margin: 0px 2% 0px 0px; */
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    font-size: 24px;
+    /* padding:5%; */
 }
 
-.header-container{
+.nav-bar ul li a {
+    color: white;    
+}
+
+.header-container {
     margin: 0px;
     height: 25vh;
     min-height: 300px;
-    display: grid;     
+    display: grid;
     border: 2px solid pink;
-    grid-template-rows: repeat(4,1fr);
-    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "header link"
-    ". . "
-    ". . "
-    ". subtile";
-    background-image: linear-gradient(lightblue,white);
-    
-    
+        "header link"
+        ". . "
+        ". . "
+        ". subtile";
+        background-image: url("/assets/img/02-hero-bg.jpg");
+
 }
 
+.aboutme-h {
+    grid-area: aboutme-h;
+    /* border: 2px solid magenta; */
+    display: flex;
+    
+ 
+}
+.aboutme-h, h2{
+    color: aquamarine;
+    padding-top: 10%;
+    font-size: 32px;
+}
 
+.aboutme-p {
+    grid-area: aboutme-p;
+    
+    font-size: 24px;
+    
+    /* margin: -1%; */
+}
+.aboutme-p ,p{
+    align-items: end;
+    border-left: 5px solid blue;
 
+}
 
+.aboutme {
+    margin: 0px 0px 0px 0px;   
+    height: auto;
+    display: grid;   
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+        "aboutme-h aboutme-p";
+    background-image: linear-gradient(rgb(15, 148, 192), white);
+
+}
