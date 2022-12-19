@@ -119,7 +119,7 @@ html{
 
 }
 
-.report {
+.work {
     margin: 0px;
     height: 50vh;
     min-height: 300px;
@@ -128,7 +128,7 @@ html{
     grid-template-columns: 25% 75%;
     grid-template-areas:
     "rp main";
-        background-image: url("/assets/img/02-hero-bg.jpg");
+        
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -137,4 +137,10 @@ html{
 
 main{
     margin: 10%;
+}
+
+.footer-ul{
+    color:white;
+    list-style: none;
+    
 }
