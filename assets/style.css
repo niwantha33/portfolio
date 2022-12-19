@@ -1,0 +1,57 @@
+
+.header{
+    grid-area: header;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+   
+    align-content: flex-end;
+}
+.nav-bar{
+    grid-area: link;
+    border: 2px solid green;
+}
+
+/* subtitle area */
+.subtitle{
+    grid-area: subtile;   
+}
+.subtitle h2{   
+    margin-left: 10%;   
+    margin-right: 20%;
+    padding: 10px;
+    border: 2px solid brown;
+    align-content: stretch;
+}
+/* link area */
+.nav-bar ul{
+    list-style: none;
+}
+
+.nav-bar ul li{
+    display: inline-block; 
+    /*margin: 1%; */
+    padding: 2%;  
+}
+
+.header-container{
+    margin: 0px;
+    height: 25vh;
+    min-height: 300px;
+    display: grid;     
+    border: 2px solid pink;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "header link"
+    ". . "
+    ". . "
+    ". subtile";
+    background-image: linear-gradient(lightblue,white);
+    
+    
+}
+
+
+
+
