@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 :root {
-    --backgrounColor: rgb(255, 255, 255);
+    --backgrounColor: rgb(232, 232, 232);
+    --h2-color: color: rgb(83, 77, 77);
 }
 
 /* navigation bar section  */
 
+html {
+    background-color: -var(backgrounColor);
+}
 
 .nav-bar {
     /* border: 2px solid red; */
 
     /* @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap'); */
+    background-color: var(backgrounColor)
 }
 
 .nav-bar>.nav-header {
@@ -25,9 +30,10 @@
 
 .nav-header>.nav-topic {
     width: 50%;
-    /* border: 2px solid green; */   
-    padding-left: 10px;    
+    /* border: 2px solid green; */
+    padding-left: 10px;
     font-size: 48px;
+    color: rgb(83, 77, 77);
 }
 
 .nav-header>.nav-links {
@@ -41,26 +47,33 @@
 
 }
 
+.nav-bar>.nav-header>.nav-links a {
+    text-decoration: none;
+    color: var(--h2-color);
+}
+
 .nav-header>.nav-links>.link {
-    color: blueviolet;
+    /* color: orangered; */
 
 }
 
 .nav-bar>.nav-sub {
     width: 100%;
     height: 300px;
-    background-image: url("/assets/img/02-hero-bg.jpg");
+    /* background-image: url("/assets/img/02-hero-bg.jpg"); */
+    background-image: linear-gradient(rgb(10, 10, 22), rgb(44, 1, 1));
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .nav-bar>.nav-sub>.nav-sub-topic {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     text-align: left;
-    color: green;
+    color: rgb(255, 103, 47);
     width: 300px;
     font-size: 48px;
     font-weight: 500px;
+    font: bold;
     position: relative;
     top: 35%;
     left: 65%;
@@ -70,28 +83,29 @@
 }
 
 .nav-bar>.nav-sub>.nav-sub-para {
-    color: green;
+    color: rgb(227, 89, 38);
     font-size: 32px;
     width: 500px;
     position: relative;
     /* z-index: 1; */
     top: 20%;
     left: 65%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     text-align: left;
 }
 
 /* About me section */
 
-.main-article>.article-about-me {
-    color: red;
-    border: 2px solid purple;
+.main-article>.article-about-me, .contact {
+    margin-top: 10px;
+    /* color: red; */
+    /* border: 2px solid purple; */
     display: flex;
     flex-direction: row;
 }
 
 .main-article>.article-about-me h2 {
-    color: aqua;
+    color: rgb(83, 77, 77);
     width: 25%;
     display: inline-flex;
     align-items: center;
@@ -100,7 +114,7 @@
 }
 
 .main-article>.article-about-me>.section-data {
-    color: red;
+    color: rgb(31, 30, 30);
     font-size: 32px;
     font-weight: 400px;
     border-left: 4px solid black;
@@ -110,35 +124,199 @@
 
 /* work section */
 .main-article>.work {
-    color: red;
-    border: 2px solid purple;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    height: 500hv;
 }
 
 .main-article>.work h2 {
-    color: aqua;
 
+    color: rgb(83, 77, 77);
     width: 25%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 62px;
+    font-size: 64px;
 }
 
+
 .main-article>.work>.sub-sections {
+    
+  
+    font-size: 32px;
+    font-weight: 400hv;
+    border-left: 4px solid orangered;
+    padding-left: 32px;
+    width: 75%;
+
+    /* display work tile and pic on grid section */   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "surf-report surf-report"
+        "surf-report surf-report"
+        "project-1 project-2"
+        "project-3 project-4";
+}
+
+.main-article>.work>.sub-sections>.surf-report {
+    grid-area: surf-report;
+    margin: 10px 40px 50px 0px;
+    background-image: url("/assets/img/02-portfolio-4.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    /* background-image: linear-gradient(rgb(27, 22, 21), rgb(2, 0, 0)); */
+    /* margin-bottom: 1.2em; */
+    /* margin-right: 50px; */
+    /* margin: 1.2rem; */
+      border: 8px solid orange;
+
+}
+
+.main-article>.work>.sub-sections>.project-1 {
+    grid-area: project-1;
+    margin: 10px 40px 50px 0px;
+    border: 8px solid rgb(168, 240, 168);
+    /* background-color: black; */
+    background-image: url("/assets/img/02-portfolio-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;   
+}
+
+.pj-0-link, .pj-1-link, .pj-2-link,  .pj-3-link, .pj-4-link {
+    text-decoration: none;
+}
+.pj-0-link h3{
+    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    /* setting box */
+    display: inline;
+    position: relative;
+    bottom: -410px;
+    margin-left: 10px;
+    justify-self: center;
+    color: gold;
+}
+.pj-1-link h3{
+    border: 5px solid white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    /* setting box */
+    display: inline;
+    position: relative;
+    top: 120px;
+    margin-left: 10px;
+    justify-self: center;
+    color: gold;
+}
+.pj-2-link h3{
+    border: 5px solid rgb(38, 0, 0);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    /* setting box */
+    display: inline;
+    position: relative;
+    top: 120px;
+    margin-left: 10px;
+    justify-self: center;
+    color: rgb(254, 254, 254);
+}
+.pj-3-link h3{
+    border: 5px solid rgb(65, 0, 0);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    /* setting box */
+    display: inline;
+    position: relative;
+    top: 120px;
+    margin-left: 10px;
+    justify-self: center;
+    color: rgb(26, 3, 93);
+}
+.pj-4-link h3{
+    border: 5px solid rgb(38, 30, 30);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    /* setting box */
+    display: inline;
+    position: relative;
+    top: 120px;
+    margin-left: 10px;
+    justify-self: center;
+    color: rgb(44, 37, 1);
+}
+.main-article>.work>.sub-sections>.project-2 {
+
+    grid-area: project-2;
+    margin: 10px 40px 50px 0px;
+    border: 8px solid rgb(168, 240, 168);
+    background-image: url("/assets/img/02-portfolio-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+
+}
+
+.main-article>.work>.sub-sections>.project-3 {
+
+    grid-area: project-3;
+    margin: 10px 40px 50px 0px;
+    border: 8px solid rgb(168, 240, 168);
+    background-image: url("/assets/img/02-portfolio-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+
+}
+
+.main-article>.work>.sub-sections>.project-4 {
+
+    grid-area: project-4;
+    margin: 10px 40px 50px 0px;
+    border: 8px solid rgb(168, 240, 168);
+    background-image: url("/assets/img/02-run-buddy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+
+}
+
+
+/* contact section */
+.main-article>.contact h2 {
+    color: rgb(83, 77, 77);
+    width: 25%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.main-article>.contact ul{
+    display: inline-flex;
+    /* list-style: none; */
     color: red;
     font-size: 32px;
     font-weight: 400px;
     border-left: 4px solid black;
     padding-left: 32px;
     width: 75%;
+    align-items: center;
+    justify-content: space-around;
+  
 }
-.main-article>.work>.sub-sections>.surf-report{
-    width: 100%;
-    height: 500px;
-    background-image: url("/assets/img/02-hero-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
+.main-article>.contact li{
+    margin-left: 10px;
+    
+  
 }
