@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
+/* media queries  */
+
+
+@import url("media-mobile.css") screen and (max-width: 480px);
+
+
 :root {
     --backgrounColor: rgb(232, 232, 232);
     --h2-color: color: rgb(83, 77, 77);
@@ -95,8 +101,16 @@ html {
 }
 
 /* About me section */
+.nav-bar {
+    /* border: 2px solid red; */
 
-.main-article>.article-about-me, .contact {
+    /* @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap'); */
+    background-color: var(backgrounColor)
+}
+
+
+.main-article>.article-about-me,
+.contact {
     margin-top: 10px;
     /* color: red; */
     /* border: 2px solid purple; */
@@ -142,15 +156,15 @@ html {
 
 
 .main-article>.work>.sub-sections {
-    
-  
+
+
     font-size: 32px;
     font-weight: 400hv;
     border-left: 4px solid orangered;
     padding-left: 32px;
     width: 75%;
 
-    /* display work tile and pic on grid section */   
+    /* display work tile and pic on grid section */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -164,7 +178,7 @@ html {
 .main-article>.work>.sub-sections>.surf-report {
     grid-area: surf-report;
     margin: 10px 40px 50px 0px;
-    background-image: url("/assets/img/02-portfolio-4.jpg"); 
+    background-image: url("/assets/img/02-portfolio-4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
@@ -172,7 +186,7 @@ html {
     /* margin-bottom: 1.2em; */
     /* margin-right: 50px; */
     /* margin: 1.2rem; */
-      border: 8px solid orange;
+    border: 8px solid orange;
 
 }
 
@@ -181,16 +195,21 @@ html {
     margin: 10px 40px 50px 0px;
     border: 8px solid rgb(168, 240, 168);
     /* background-color: black; */
-    background-image: url("./assets/img/02-portfolio-1.jpg");
+    background-image: url("../img/02-portfolio-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 20vh;   
+    height: 20vh;
 }
 
-.pj-0-link, .pj-1-link, .pj-2-link,  .pj-3-link, .pj-4-link {
+.pj-0-link,
+.pj-1-link,
+.pj-2-link,
+.pj-3-link,
+.pj-4-link {
     text-decoration: none;
 }
-.pj-0-link h3{
+
+.pj-0-link h3 {
     border: 5px solid white;
     box-sizing: border-box;
     border-radius: 10px;
@@ -203,7 +222,8 @@ html {
     justify-self: center;
     color: gold;
 }
-.pj-1-link h3{
+
+.pj-1-link h3 {
     border: 5px solid white;
     box-sizing: border-box;
     border-radius: 10px;
@@ -216,7 +236,8 @@ html {
     justify-self: center;
     color: gold;
 }
-.pj-2-link h3{
+
+.pj-2-link h3 {
     border: 5px solid rgb(38, 0, 0);
     box-sizing: border-box;
     border-radius: 10px;
@@ -229,7 +250,8 @@ html {
     justify-self: center;
     color: rgb(254, 254, 254);
 }
-.pj-3-link h3{
+
+.pj-3-link h3 {
     border: 5px solid rgb(65, 0, 0);
     box-sizing: border-box;
     border-radius: 10px;
@@ -242,7 +264,8 @@ html {
     justify-self: center;
     color: rgb(26, 3, 93);
 }
-.pj-4-link h3{
+
+.pj-4-link h3 {
     border: 5px solid rgb(38, 30, 30);
     box-sizing: border-box;
     border-radius: 10px;
@@ -255,12 +278,13 @@ html {
     justify-self: center;
     color: rgb(44, 37, 1);
 }
+
 .main-article>.work>.sub-sections>.project-2 {
 
     grid-area: project-2;
     margin: 10px 40px 50px 0px;
     border: 8px solid rgb(168, 240, 168);
-    background-image: url("./assets/img/02-portfolio-2.jpg");
+    background-image: url("../img/02-portfolio-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
@@ -272,7 +296,7 @@ html {
     grid-area: project-3;
     margin: 10px 40px 50px 0px;
     border: 8px solid rgb(168, 240, 168);
-    background-image: url("./assets/img/02-portfolio-3.jpg");
+    background-image: url("../img/02-portfolio-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
@@ -284,7 +308,7 @@ html {
     grid-area: project-4;
     margin: 10px 40px 50px 0px;
     border: 8px solid rgb(168, 240, 168);
-    background-image: url("./assets/img/02-run-buddy.jpg");
+    background-image: url("../img/02-run-buddy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
@@ -302,7 +326,7 @@ html {
     font-size: 64px;
 }
 
-.main-article>.contact ul{
+.main-article>.contact ul {
     display: inline-flex;
     /* list-style: none; */
     color: red;
@@ -313,10 +337,205 @@ html {
     width: 75%;
     align-items: center;
     justify-content: space-around;
-  
+
 }
-.main-article>.contact li{
+
+.main-article>.contact li {
     margin-left: 10px;
-    
-  
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav-bar>.nav-sub>.nav-sub-topic {
+        color: green;
+        top: 40px;
+        /* left:50%;    */
+        left: 40px;
+        transform: rotate(-90deg);
+        align-items: center;
+
+    }
+
+    .nav-bar>.nav-sub>.nav-sub-para {
+        color: green;
+        /* color: rgb(227, 89, 38); */
+        width: 100%;
+        font-size: 18px;
+        top: 145px;
+        left: 20px;
+        /* bottom: 400px; */
+
+    }
+
+    .main-article>.article-about-me,
+    .contact {
+        margin-top: 10px;
+        /* color: red; */
+        /* border: 2px solid purple; */
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-article>.article-about-me h2 {
+        color: rgb(83, 77, 77);
+        font-size: 38px;
+    }
+
+    .main-article>.article-about-me>.section-data {
+        color: rgb(31, 30, 30);
+        /* font-size: px; */
+        border-top: 4px solid black;
+        border-left: 0px solid black;
+        justify-content: left;
+        font-size: 18px;
+    }
+
+    .main-article>.work {
+
+        flex-direction: column;
+        height: 500hv;
+        align-items: center;
+    }
+
+    .main-article>.work h2 {
+
+        color: rgb(83, 77, 77);
+        border-bottom: 4px solid black;
+        border-left: 0px solid black;
+        font-size: 38px;
+    }
+
+    .main-article>.work>.sub-sections {
+        height: 100hv;
+        border-left: 0px solid black;
+        /* display work tile and pic on grid section */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "surf-report"
+            "project-1"
+            "project-2"
+            "project-3"
+            "project-4";
+    }
+
+    .main-article>.work>.sub-sections>.surf-report {
+
+        /* height: 30vh;         */
+        /* background-size: 400px 300px; */
+        height: 20vh;
+        width: 30vh;
+
+    }
+
+    .pj-0-link h3
+   {
+        /* border: 2px solid rgb(219, 34, 34);      
+        border-radius: 5px;      
+        color: rgb(19, 17, 10);
+        font-size: 18px; */
+        border: 3px solid rgb(88, 3, 109);
+       
+        border-radius: 5px;
+        
+        /* setting box */
+        display: inline;
+        position: relative;
+        bottom: -100px;
+        margin-left: 10px;
+        justify-self: center;
+        color: rgb(32, 27, 1);
+    }
+    .pj-1-link h3,
+    .pj-2-link h3,
+    .pj-3-link h3,
+    .pj-4-link h3  {
+        /* border: 2px solid rgb(219, 34, 34);      
+        border-radius: 5px;      
+        color: rgb(19, 17, 10);
+        font-size: 18px; */
+        border: 3px solid rgb(208, 18, 255);
+       
+        border-radius: 5px;
+        
+        /* setting box */
+        display: inline;
+        position: relative;
+        top: 120px;
+        margin-left: 10px;
+        justify-self: center;
+        color: rgb(250, 212, 22);
+        font-size: 28px;
+    }
+
+    .main-article>.work>.sub-sections>.project-1 {
+        /* height: 60vh;
+        width: 40vh;  */
+        /* background-size: 400px 300px; */
+        /* margin: -30px; */
+        padding: 0px;
+        margin: 0px;
+        height: 20vh;
+        width: 30vh;
+    }
+
+    .main-article>.work>.sub-sections>.project-2 {
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .main-article>.work>.sub-sections>.project-2 {
+        padding: 0px;
+        margin: 0px;
+        height: 20vh;
+        width: 30vh;
+
+    }
+
+    .main-article>.work>.sub-sections>.project-3 {
+        padding: 0px;
+        margin: 0px;
+        height: 20vh;
+        width: 30vh;
+
+    }
+
+    .main-article>.work>.sub-sections>.project-4 {
+        padding: 0px;
+        margin: 0px;
+        height: 20vh;
+        width: 30vh;
+
+    }
+
+
+    /* contact area */
+    /* contact section */
+    .main-article>.contact h2 {
+        color: rgb(83, 77, 77);
+        font-size: 38px;
+    }
+
+    .main-article>.contact ul {
+        margin: -20px;
+        display: inline-table;
+        /* list-style: none; */
+        border-top: 4px solid black;
+        border-left: 0px solid black;
+        font-size: 28px;
+        font-weight: 400px;
+        justify-content: left;
+
+
+    }
+
+    .main-article>.contact li {
+        margin-left: 10px;
+
+    }
+
 }
