@@ -7,7 +7,7 @@
 
 /* navigation bar section  */
 
-html{
+html {
     background-color: -var(backgrounColor);
 }
 
@@ -30,8 +30,8 @@ html{
 
 .nav-header>.nav-topic {
     width: 50%;
-    /* border: 2px solid green; */   
-    padding-left: 10px;    
+    /* border: 2px solid green; */
+    padding-left: 10px;
     font-size: 48px;
     color: rgb(83, 77, 77);
 }
@@ -44,11 +44,12 @@ html{
     display: inline-flex;
     justify-content: space-around;
     padding-right: 30px;
-   
+
 }
-.nav-bar>.nav-header>.nav-links a{
+
+.nav-bar>.nav-header>.nav-links a {
     text-decoration: none;
-    color:var(--h2-color);
+    color: var(--h2-color);
 }
 
 .nav-header>.nav-links>.link {
@@ -60,8 +61,7 @@ html{
     width: 100%;
     height: 300px;
     /* background-image: url("/assets/img/02-hero-bg.jpg"); */
-    background-image: linear-gradient(rgb(10, 10, 22),rgb(44, 1, 1)
-    );
+    background-image: linear-gradient(rgb(10, 10, 22), rgb(44, 1, 1));
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -96,15 +96,16 @@ html{
 
 /* About me section */
 
-.main-article>.article-about-me {
+.main-article>.article-about-me, .contact {
+    margin-top: 10px;
     color: red;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     display: flex;
     flex-direction: row;
 }
 
 .main-article>.article-about-me h2 {
-    color: aqua;
+    color: rgb(83, 77, 77);
     width: 25%;
     display: inline-flex;
     align-items: center;
@@ -123,35 +124,111 @@ html{
 
 /* work section */
 .main-article>.work {
-    color: red;
-    border: 2px solid purple;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    height: 500hv;
 }
 
 .main-article>.work h2 {
-    color: aqua;
 
+    color: rgb(83, 77, 77);
     width: 25%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 62px;
+    font-size: 64px;
+}
+
+.main-article>.work>.sub-sections {
+    display: grid;
+}
+
+.main-article>.work>.sub-sections>.surf-report {
+
+    grid-area: surf-report;
+    margin: 10px 40px 50px 0px;
+    background-image: linear-gradient(orangered, white);
+    /* margin-bottom: 1.2em; */
+    /* margin-right: 50px; */
+    /* margin: 1.2rem; */
+    border: 2px solid green;
+
+}
+
+.main-article>.work>.sub-sections>.project-1 {
+
+    grid-area: project-1;
+    margin: 10px 40px 50px 0px;
+    border: 2px solid green;
+
+}
+.main-article>.work>.sub-sections>.project-2 {
+
+    grid-area: project-2;
+    margin: 10px 40px 50px 0px;
+    border: 2px solid green;
+
+}
+.main-article>.work>.sub-sections>.project-3 {
+
+    grid-area: project-3;
+    margin: 10px 40px 50px 0px;
+    border: 2px solid green;
+
+}
+.main-article>.work>.sub-sections>.project-4 {
+
+    grid-area: project-4;
+    margin: 10px 40px 50px 0px;
+    border: 2px solid green;
+
 }
 
 .main-article>.work>.sub-sections {
     color: red;
     font-size: 32px;
     font-weight: 400px;
+    border-left: 4px solid rgb(214, 20, 20);
+
+    padding-left: 32px;
+    width: 75%;
+    /* display work tile and pic on grid section */
+   
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "surf-report surf-report"
+        "surf-report surf-report"
+        "project-1 project-2"
+        "project-3 project-4";
+}
+
+/* contact section */
+.main-article>.contact h2 {
+    color: rgb(83, 77, 77);
+    width: 25%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.main-article>.contact ul{
+    display: inline-flex;
+    /* list-style: none; */
+    color: red;
+    font-size: 32px;
+    font-weight: 400px;
     border-left: 4px solid black;
     padding-left: 32px;
     width: 75%;
+    align-items: center;
+    justify-content: space-around;
+  
 }
-.main-article>.work>.sub-sections>.surf-report{
-    width: 100%;
-    height: 500px;
-    background-image: url("/assets/img/02-hero-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
+.main-article>.contact li{
+    margin-left: 10px;
+    
+  
 }
