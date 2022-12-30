@@ -181,7 +181,7 @@ html {
     margin: 10px 40px 50px 0px;
     border: 8px solid rgb(168, 240, 168);
     /* background-color: black; */
-    background-image: url("/assets/img/02-portfolio-1.jpg");
+    background-image: url("./assets/img/02-portfolio-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;   
@@ -260,7 +260,7 @@ html {
     grid-area: project-2;
     margin: 10px 40px 50px 0px;
     border: 8px solid rgb(168, 240, 168);
-    background-image: url("/assets/img/02-portfolio-2.jpg");
+    background-image: url("./assets/img/02-portfolio-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
@@ -272,7 +272,7 @@ html {
     grid-area: project-3;
     margin: 10px 40px 50px 0px;
     border: 8px solid rgb(168, 240, 168);
-    background-image: url("/assets/img/02-portfolio-3.jpg");
+    background-image: url("./assets/img/02-portfolio-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
@@ -284,7 +284,7 @@ html {
     grid-area: project-4;
     margin: 10px 40px 50px 0px;
     border: 8px solid rgb(168, 240, 168);
-    background-image: url("/assets/img/02-run-buddy.jpg");
+    background-image: url("./assets/img/02-run-buddy.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;
